@@ -1,0 +1,26 @@
+# Goals
+#Ogre Must Die.
+
+#Use distanceTo() to find the range to each enemy, and use say()
+#to call the range for your artillery.
+
+# Then sit back and watch the fireworks.
+
+# Ogres are scouting the forest!
+# Use the distanceTo method to find where the enemies are.
+#Say the distance for each enemy to tell the artillery where to fire
+
+enemy1 = "Gort"
+distance1 = hero.distanceTo(enemy1)
+hero.say(distance1)
+
+enemy2 = "Smasher"
+distance2 = hero.distanceTo(enemy2)
+hero.say(distance2)
+# Say the distance2 variable!
+
+# Find and say the distance to the rest of the enemies:
+# Don't shoot at your friends!
+enemy3 = "Gorgnub"
+distance3 = hero.distanceTo(enemy3)
+hero.say(distance3)
