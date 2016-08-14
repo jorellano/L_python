@@ -1,0 +1,44 @@
+## Goals
+# stop all the ogres
+# save all the peasants.
+#Define a function in your code.
+#
+# The ogres have broken thorugh and opened another path
+# into the village! You'll need to write your own function to handle this new attack
+# look closely at how to define a function. You're on your own this time.
+
+## def findAndAttackEnemy():
+        # enemy = hero.findNearestEnemy()
+        # if enemy:
+            # hero.attack(enemy)
+
+        # Incoming munchkins! Defend the town!
+
+# # Incoming munchkins! Defend the town!
+
+
+# Incoming munchkins! Defend the town!
+
+# Define your own function to fight the enemy!
+# In the function, find an enemy, then cleave or attack i
+
+def kiltem():
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        hero.attack(enemy)
+    ready = hero.isReady("cleave")
+    if ready:
+        hero.cleave(enemy)
+
+
+# Move between patrol points and call the function.
+while True:
+    hero.moveXY(35, 34)
+    # Use whatever function name you defined above.
+    kiltem()
+    hero.moveXY(47, 27)
+    # Call the function again.
+    kiltem()
+    hero.moveXY(60, 31)
+    # Call the function again.
+    kiltem()
