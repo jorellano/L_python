@@ -1,0 +1,28 @@
+# This level is fucked. I will have to come back and find a better way to work this map.
+# This function attacks the nearest enemy.
+def findAndAttackEnemy():
+    enemy = hero.findNearestEnemy()
+    if enemy:
+        hero.attack(enemy)
+
+def findAndCleaveEnemy():
+    # Define a function to cleave enemies (but only when the ability is ready).
+    enemy = hero.findNearestEnemy()
+    ready = hero.isReady("cleave")
+    if ready:
+        hero.cleave(enemy)
+    pass
+
+# In your main loop, patrol, cleave, and attack.
+while True:
+    # Move to the patrol point, cleave, and attack.
+    hero.moveXY(39, 34)
+    findAndCleaveEnemy()
+    findAndAttackEnemy()
+
+    # Move to the other point, cleave, and attack.
+    hero.moveXY(60, 31)
+    findAndCleaveEnemy()
+    findAndAttackEnemy()
+
+# There has to be a better way than a half ass work-around...
