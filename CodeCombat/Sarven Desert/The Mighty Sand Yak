@@ -1,0 +1,22 @@
+# When the yak is near I have to move quickly
+
+# Tharin is rather slow...
+
+# Let yaks get close, then move 10m right to dodge.
+# Dodge 4 yaks to complete the level.
+
+while True:
+    # Get your current x and y position using your Sense Stone.
+    x = hero.pos.x
+    y = hero.pos.y
+    
+    # Find the nearest yak.
+    yak = hero.findNearestEnemy()
+    
+    # Use "if" to only move when a yak is less than 10m away.
+    if hero.distanceTo(yak) < 10:
+        # To move right, add 10 to your x position.
+        x = x + 10
+        # Use moveXY to move!
+        hero.moveXY(x, y)
+        pass
